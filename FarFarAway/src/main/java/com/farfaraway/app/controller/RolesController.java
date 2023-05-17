@@ -19,6 +19,10 @@ public class RolesController {
 
 	@Autowired
 	RolesService rolesService;
+	
+	@GetMapping("/welcome")
+	System.out.println("Welcome to the new proyect");
+
 
 	@GetMapping("/roles")
 	public List<Roles> listRoles() {
